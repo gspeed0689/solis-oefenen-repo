@@ -3,8 +3,11 @@ def power(x, y):
 
     Args:
         x (num): any numeric object
-        y (num): any numeric integer
+        y (num): any positive numeric integer
     """
+    if y <= 0:
+        raise ValueError("y cannot be a negative number")
+    
     v = x ** y # v is return value
 
     return(v) # return our calculation
