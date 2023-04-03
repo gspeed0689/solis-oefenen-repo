@@ -3,9 +3,8 @@ def power(x, y):
 
     Args:
         x (num): any numeric object
-        y (int): any positive integer
+        y (num): any numeric integer
     """
-    v = x # v is return value
-    for i in range(y): 
-        v = v * x # multiply each time
+    v = x ** y # v is return value
+
     return(v) # return our calculation
